@@ -49,14 +49,20 @@ billAmountInput.addEventListener("input", function (e) {
     return;
   }
 
+  state.billAmount = 0;
   showError(input);
+
+  calculateTipTotal(state);
+  updateUI(state);
 });
 
 tipCustomInput.addEventListener("input", function (e) {
   const input = e.target;
 
+  console.log(input);
+
   if (input.validity.valid) {
-    hideError(input, false, false);
+    hideError(input, false);
 
     state.tipPercentage = +input.value;
 
@@ -68,7 +74,11 @@ tipCustomInput.addEventListener("input", function (e) {
     return;
   }
 
+  state.tipPercentage = 0;
   showError(input, false);
+
+  calculateTipTotal(state);
+  updateUI(state);
 });
 
 numberOfPeopleInput.addEventListener("input", function (e) {
@@ -85,7 +95,11 @@ numberOfPeopleInput.addEventListener("input", function (e) {
     return;
   }
 
+  state.numberOfPeople = 0;
   showError(input);
+
+  calculateTipTotal(state);
+  updateUI(state);
 });
 
 const uncheckButtons = function (buttonArray) {
