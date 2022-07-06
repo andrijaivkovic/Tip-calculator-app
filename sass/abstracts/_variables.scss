@@ -1,0 +1,28 @@
+/*
+
+  s - strong
+  v - very
+  g - greyish
+  l - light
+  d - dark
+
+*/
+
+// Colors
+
+$color-primary-s-cyan: #26c0ab;
+$color-primary-l-red: #dd8272;
+
+$color-neutral-vd-cyan: #00494d;
+$color-neutral-dg-cyan: #5e7a7d;
+$color-neutral-g-cyan: #7f9c9f;
+$color-neutral-lg-cyan: #c5e4e7;
+$color-neutral-lg-cyan-2: #9fe8df;
+$color-neutral-vlg-cyan: #f4fafa;
+
+$color-neutral-white: #ffffff;
+
+// Breakpoints
+
+$breakpoint-mobile: 37.5em; // 600px
+$breakpoint-desktop: 90em; // 1440px

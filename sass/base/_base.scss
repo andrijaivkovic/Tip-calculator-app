@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+html {
+  font-family: "Space Mono", monospace;
+  font-size: 62.5%; // makes 1rem = 10px
+
+  @include mediaQuery(desktop) {
+    font-size: 70%;
+  }
+}
+
+body {
+  @include flex-column;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-color: $color-neutral-lg-cyan;
+
+  @include mediaQuery(desktop) {
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+::selection {
+  color: $color-neutral-white;
+  background-color: $color-primary-s-cyan;
+}
+
+.hidden {
+  display: none !important;
+}
+
+input:not(:placeholder-shown):invalid {
+  outline: 1px solid $color-primary-l-red;
+}
+
+input:valid {
+  outline: 1px solid $color-primary-s-cyan;
+}

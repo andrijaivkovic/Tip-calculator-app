@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        <span>Spli</span>
+        <span>tter</span>
+      </h1>
+    </header>
+    <main>
+      <section class="tip-calculator">
+        <div class="tip-calculator__bill-container tip-calculator__section">
+          <p class="tip-calculator__title">Bill</p>
+          <p class="tip-calculator__error-message hidden"></p>
+          <div class="tip-calculator__inline-input-container">
+            <input
+              required
+              autocomplete="off"
+              class="tip-calculator__inline-input tip-calculator__inline-input--bill-input bill-input"
+              type="number"
+              placeholder="0"
+              min="0"
+              step="0.01"
+            />
+          </div>
+        </div>
+        <div
+          class="tip-calculator__tip-percent-container tip-calculator__section"
+        >
+          <p class="tip-calculator__title">Select Tip %</p>
+          <form
+            autocomplete="off"
+            action=""
+            class="tip-calculator__grid-input-container"
+            id="tip-calculator__select-tip-form"
+          >
+            <input
+              value="5"
+              class="tip-calculator__radio"
+              name="tip-calculator__radio"
+              id="tip-calculator__radio-5"
+              type="radio"
+            />
+            <label
+              class="tip-calculator__radio-label button button--dark"
+              for="tip-calculator__radio-5"
+              >5%</label
+            >
+            <input
+              value="10"
+              class="tip-calculator__radio"
+              name="tip-calculator__radio"
+              id="tip-calculator__radio-10"
+              type="radio"
+            />
+            <label
+              class="tip-calculator__radio-label button button--dark"
+              for="tip-calculator__radio-10"
+              >10%</label
+            >
+            <input
+              value="15"
+              class="tip-calculator__radio"
+              name="tip-calculator__radio"
+              id="tip-calculator__radio-15"
+              type="radio"
+            />
+            <label
+              class="tip-calculator__radio-label button button--dark"
+              for="tip-calculator__radio-15"
+              >15%</label
+            >
+            <input
+              value="25"
+              class="tip-calculator__radio"
+              name="tip-calculator__radio"
+              id="tip-calculator__radio-25"
+              type="radio"
+            />
+            <label
+              class="tip-calculator__radio-label button button--dark"
+              for="tip-calculator__radio-25"
+              >25%</label
+            >
+            <input
+              value="50"
+              class="tip-calculator__radio"
+              name="tip-calculator__radio"
+              id="tip-calculator__radio-50"
+              type="radio"
+            />
+            <label
+              class="tip-calculator__radio-label button button--dark"
+              for="tip-calculator__radio-50"
+              >50%</label
+            >
+            <input
+              required
+              name="tip-calculator__custom-tip"
+              autocomplete="off"
+              class="tip-calculator__inline-input tip-custom-input"
+              type="number"
+              placeholder="Custom"
+              min="0"
+              step="1"
+            />
+          </form>
+        </div>
+        <div
+          class="tip-calculator__num-people-container tip-calculator__section"
+        >
+          <p class="tip-calculator__title">Number of People</p>
+          <p class="tip-calculator__error-message hidden"></p>
+          <div class="tip-calculator__inline-input-container">
+            <input
+              required
+              autocomplete="off"
+              class="tip-calculator__inline-input tip-calculator__inline-input--number-of-people-input number-of-people-input"
+              type="number"
+              placeholder="0"
+              min="1"
+              step="0.01"
+            />
+          </div>
+        </div>
+        <div class="tip-calculator__result tip-calculator__section">
+          <div class="tip-calculator__result-text">
+            <div
+              class="tip-calculator__result-tip tip-calculator__result-container"
+            >
+              <p class="tip-calculator__result-type">Tip Amount</p>
+              <p class="tip-calculator__result-per-person-text">/ person</p>
+              <p class="tip-calculator__result-number tip-amount">$0.00</p>
+            </div>
+            <div
+              class="tip-calculator__result-total tip-calculator__result-container"
+            >
+              <p class="tip-calculator__result-type">Total</p>
+              <p class="tip-calculator__result-per-person-text">/ person</p>
+              <p class="tip-calculator__result-number total">$0.00</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="tip-calculator__button button button--light reset-button"
+          >
+            Reset
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

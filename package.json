@@ -1,0 +1,15 @@
+{
+  "name": "tip-calculator-app",
+  "version": "1.0.0",
+  "description": "This is my solution to the Tip calculator challenge provided on FrontEnd Mentor.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Andrija Ivkovic",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  }
+}

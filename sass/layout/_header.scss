@@ -1,0 +1,16 @@
+.header {
+  padding: 3rem 0;
+
+  @include mediaQuery(desktop) {
+    padding: 0;
+  }
+
+  &__title {
+    display: grid;
+
+    font-size: 2.6rem;
+    color: $color-neutral-dg-cyan;
+    letter-spacing: 0.75rem;
+    text-transform: uppercase;
+  }
+}
