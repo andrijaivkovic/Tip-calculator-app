@@ -67,4 +67,4 @@ On this [link](http://getbem.com/) you can learn more about BEM naming conventio
 ## Author
 
 - Frontend Mentor - [@andrijaivkovic](https://www.frontendmentor.io/profile/andrijaivkovic)
-- Twitter - [@AndrijaIvkovic1](https://www.twitter.com/yourusername)
+- Twitter - [@AndrijaIvkovic1](https://www.twitter.com/AndrijaIvkovic1)
