@@ -193,13 +193,11 @@ const updateUI = function (stateObject) {
 
 const reset = function (stateObject) {
   // State reset
-  stateObject = {
-    billAmount: 0,
-    tipPercentage: 0,
-    numberOfPeople: 0,
-    tipPerPerson: "",
-    totalPerPerson: "",
-  };
+  stateObject.billAmount = 0;
+  stateObject.tipPercentage = 0;
+  stateObject.numberOfPeople = 0;
+  stateObject.tipPerPerson = "";
+  stateObject.totalPerPerson = "";
 
   // UI reset
   billAmountInput.value = "";
@@ -210,3 +208,11 @@ const reset = function (stateObject) {
   total.textContent = "$0.00";
   tipAmount.textContent = "$0.00";
 };
+
+// const printStateButton = document.querySelector(
+//   ".tip-calculator__button-state"
+// );
+
+// printStateButton.addEventListener("click", function () {
+//   console.log(state);
+// });
